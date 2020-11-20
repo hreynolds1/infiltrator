@@ -34,9 +34,11 @@ body{
 }
 .bad{
     background-color: red !important;
+    background-image: none !important;
 }
 .green{
     background-color: green !important;
+    background-image: none !important;
 }
 .selected{
     outline-style: solid;
