@@ -1,0 +1,42 @@
+html{
+    font-family: "Allerta Stencil";
+}
+#title{
+    width: 200px;
+    grid-column: 15/17;
+}
+.textdisplay{
+    background-color: white;
+    padding: 10px;
+    padding-top: 5px;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+#whatsthegame{
+    grid-row: 2/3;
+    grid-column: 1/10;
+
+}
+#objective{
+    grid-row: 3/4;
+    grid-column: 9/19;
+}
+#howtoplaytext{
+    grid-row: 2/3;
+    grid-column: 10/25;
+}
+#howtowin{
+    grid-row: 4/5;
+    grid-column: 1/10;
+}
+#hazards{
+    grid-row: 4/5;
+    grid-column: 11/23;
+}
+#soldier{
+    grid-row: 2/20;
+    grid-column: 27/31;
+}
+.bold{
+    font-weight: bold;
+}

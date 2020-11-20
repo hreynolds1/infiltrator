@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="game.css">
+    <head>
+        <title>Infiltrator</title>
+    </head>
+    <body id="gamegrid">
+    </body>
+    <div id="turncontrol">
+        <button class="phasebutton" onclick="newphase('moving')">Move</button>
+        <button class="phasebutton" onclick="newphase('shooting')">Shoot</button>
+        <button class="phasebutton" onclick="newphase('building')">Build</button>
+        <button class="phasebutton" onclick="finishturn()">End turn</button>
+        <h1 id="status"><span id="player">Blue</span> is currently <span id="currentphase">moving</span></h1>
+    </div>
+    <div id="bluebase" class="baseHP">
+        <p id="bluehp">10</p>
+    </div>
+    <div id="redbase" class="baseHP">
+        <p id="redhp">10</p>
+    </div>
+    <script src="infiltrator.js"></script>
+</html>
