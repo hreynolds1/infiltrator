@@ -369,6 +369,16 @@ function finishturn(){
 
 function newphase(arg){
     //oh gee, I wonder what this does
+    try{
+        for (i in neighbouring){
+            neighbouring[i].classList.remove("green")
+            if (neighbouring[i].children.length){
+                neighbouring[i].children[0].classList.remove("green")
+            }
+        }
+    }catch(err){console.log(err)}
+
+    try{selectedsoldier.deselect(0)}catch{}
     phase=arg
     document.getElementById("currentphase").innerHTML=phase
 }
