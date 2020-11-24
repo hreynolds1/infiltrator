@@ -334,6 +334,12 @@ function selectele(e){
 
 function finishturn(){
     try{selectedsoldier.deselect(0)}catch{}
+        for (i in neighbouring){
+        neighbouring[i].classList.remove("green")
+        if (neighbouring[i].children.length){
+            neighbouring[i].children[0].classList.remove("green")
+        }
+    }
     bottombar=document.getElementById("turncontrol")
     selectedsoldier=false
     thing=currentturn
@@ -369,14 +375,12 @@ function finishturn(){
 
 function newphase(arg){
     //oh gee, I wonder what this does
-    try{
-        for (i in neighbouring){
-            neighbouring[i].classList.remove("green")
-            if (neighbouring[i].children.length){
-                neighbouring[i].children[0].classList.remove("green")
-            }
+    for (i in neighbouring){
+        neighbouring[i].classList.remove("green")
+        if (neighbouring[i].children.length){
+            neighbouring[i].children[0].classList.remove("green")
         }
-    }catch(err){console.log(err)}
+    }
 
     try{selectedsoldier.deselect(0)}catch{}
     phase=arg
